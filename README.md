@@ -35,3 +35,17 @@ Finally, you can try to build the project:
 ```bash
 $ cmake --build build/
 ```
+
+Notes
+=====
+
+* Sources to play with:
+  * [`hello.hpp`](hello.hpp)
+  * [`hello.cpp`](hello.cpp)
+  * [`test/hello_test.cpp`](test/hello_test.cpp)
+
+* Format style configuration:
+  * [`.clang-format`](.clang-format)
+
+* If you want to use a clang-format that is not on your seach path, you have to
+  supply CMake with<br/>`-DCLANGFORMAT_EXECUTABLE=/some/path/to/clang-format`.
