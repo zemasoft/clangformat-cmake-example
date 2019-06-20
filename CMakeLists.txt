@@ -10,9 +10,9 @@ add_library(hello
   hello.hpp
 )
 
-add_library(hello::hello ALIAS hello)
-
 target_include_directories(hello PUBLIC .)
+
+add_library(ClangFormatCMakeExample::hello ALIAS hello)
 
 include(CTest)
 add_subdirectory(test)
@@ -20,5 +20,5 @@ add_subdirectory(test)
 if(CLANGFORMAT)
   include(ClangFormat)
 
-  clangformat_target_setup(hello)
+  target_clangformat_setup(ClangFormatCMakeExample::hello)
 endif()
