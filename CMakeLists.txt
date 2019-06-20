@@ -1,13 +1,18 @@
-cmake_minimum_required(VERSION 2.8)
+cmake_minimum_required(VERSION 3.0)
 project(ClangFormatCMakeExample)
 
-set(CMAKE_MODULE_PATH ${CMAKE_MODULE_PATH} ${PROJECT_SOURCE_DIR}/clangformat-cmake/cmake)
+list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/clangformat-cmake/cmake)
 
 option(CLANGFORMAT "Setup clangformat target" ON)
 
-include_directories(.)
+add_library(hello
+  hello.cpp
+  hello.hpp
+)
 
-add_library(hello hello.cpp)
+add_library(hello::hello ALIAS hello)
+
+target_include_directories(hello PUBLIC .)
 
 include(CTest)
 add_subdirectory(test)

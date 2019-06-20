@@ -11,7 +11,7 @@ CMake module on a minimalistic C++ project.
 Requirements
 ============
 
-The module itself requires CMake 2.8 or higher and any version of clang-format.
+The module itself requires CMake 3.0 or higher and any version of clang-format.
 This example project requires a C++ compiler on top for CMake to be able to
 generate a build system and potentially to build the project.
 
