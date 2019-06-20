@@ -20,8 +20,5 @@ add_subdirectory(test)
 if(CLANGFORMAT)
   include(ClangFormat)
 
-  set(clangformat_srcs hello.hpp
-                       hello.cpp)
-
-  clangformat_setup("${clangformat_srcs}")
+  clangformat_target_setup(hello)
 endif()

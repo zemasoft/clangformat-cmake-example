@@ -11,7 +11,5 @@ add_test(NAME hello_test COMMAND hello_test)
 if(CLANGFORMAT)
   include(ClangFormat)
 
-  set(clangformat_srcs hello_test.cpp)
-
-  clangformat_setup("${clangformat_srcs}")
+  clangformat_target_setup(hello_test)
 endif()
