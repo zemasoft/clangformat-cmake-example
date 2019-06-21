@@ -11,9 +11,9 @@ CMake module on a minimalistic C++ project.
 Requirements
 ============
 
-The module itself requires CMake 3.0 or higher and any version of clang-format.
-This example project requires a C++ compiler on top for CMake to be able to
-generate a build system and potentially to build the project.
+The module itself requires CMake 3.0 or higher and any version of clang-format
+installed. You will also need a C++ compiler for CMake to be able to generate
+the build system.
 
 Usage
 =====
@@ -27,13 +27,27 @@ $ cmake . -Bbuild
 Then, you can format sources anytime using `clangformat` target:
 
 ```bash
-$ cmake --build build/ --target clangformat
+$ cmake --build build --target clangformat
+```
+
+or:
+
+```bash
+$ cd build
+$ make clangformat
 ```
 
 Finally, you can try to build the project:
 
 ```bash
-$ cmake --build build/
+$ cmake --build build
+```
+
+or:
+
+```bash
+$ cd build
+$ make
 ```
 
 Notes
@@ -47,5 +61,5 @@ Notes
 * Format style configuration:
   * [`.clang-format`](.clang-format)
 
-* If you want to use a clang-format that is not on your seach path, you have to
-  supply CMake with<br/>`-DCLANGFORMAT_EXECUTABLE=/some/path/to/clang-format`.
+* If you want to use clang-format that is not on your seach path, you have to
+  supply CMake with<br/>`-DCLANGFORMAT_EXECUTABLE=/path/to/clang-format`.
