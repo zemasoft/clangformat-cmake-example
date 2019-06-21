@@ -10,8 +10,4 @@ add_executable(ClangFormatCMakeExample::hello_test ALIAS hello_test)
 
 add_test(NAME hello_test COMMAND ClangFormatCMakeExample::hello_test)
 
-if(CLANGFORMAT)
-  include(ClangFormat)
-
-  target_clangformat_setup(ClangFormatCMakeExample::hello_test)
-endif()
+target_clangformat_setup(ClangFormatCMakeExample::hello_test)
