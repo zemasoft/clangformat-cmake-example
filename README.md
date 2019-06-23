@@ -4,9 +4,9 @@
 Introduction
 ============
 
-This is an example project which demonstrates the use of
+This is a minimalistic C++ project which demonstrates the use of
 [`clangformat-cmake`](https://github.com/zemasoft/clangformat-cmake)
-CMake module on a minimalistic C++ project.
+project containing ClangFormat CMake module.
 
 Requirements
 ============
@@ -18,13 +18,22 @@ the build system.
 Usage
 =====
 
-First, generate the build system:
+
+First, get the project:
+
+```bash
+$ git clone https://github.com/zemasoft/clangformat-cmake-example
+$ cd clangformat-cmake-example
+$ git submodule --init --recursive
+```
+
+Then generate the build system:
 
 ```bash
 $ cmake . -Bbuild
 ```
 
-Then, you can format sources anytime using `clangformat` target:
+Now you can format sources anytime using `clangformat` target:
 
 ```bash
 $ cmake --build build --target clangformat
@@ -37,7 +46,7 @@ $ cd build
 $ make clangformat
 ```
 
-Finally, you can try to build the project:
+Finally, try to build the project:
 
 ```bash
 $ cmake --build build
