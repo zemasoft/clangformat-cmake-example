@@ -17,42 +17,43 @@ the build system.
 
 1) Obtain the project:
 
-```bash
-$ git clone https://github.com/zemasoft/clangformat-cmake-example
-$ cd clangformat-cmake-example
-$ git submodule --init --recursive
-```
+   ```bash
+   $ git clone https://github.com/zemasoft/clangformat-cmake-example
+   $ cd clangformat-cmake-example
+   $ git submodule --init --recursive
+   ```
 
 2) Generate the build system:
 
-```bash
-$ cmake . -Bbuild
-```
+   ```bash
+   $ cmake . -Bbuild
+   ```
 
 3) Format sources anytime using `clangformat` target:
 
-```bash
-$ cmake --build build --target clangformat
-```
+   ```bash
+   $ cmake --build build --target clangformat
+   ```
+
    or:
 
-```bash
-$ cd build
-$ make clangformat
-```
+   ```bash
+   $ cd build
+   $ make clangformat
+   ```
 
 4) Build the project:
 
-```bash
-$ cmake --build build
-```
+   ```bash
+   $ cmake --build build
+   ```
 
    or:
 
-```bash
-$ cd build
-$ make
-```
+   ```bash
+   $ cd build
+   $ make
+   ```
 
 ## Notes
 
