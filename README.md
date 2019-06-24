@@ -1,22 +1,19 @@
 [![Language](https://img.shields.io/badge/language-CMake-blue.svg)](https://cmake.org/)
 [![Licence](https://img.shields.io/badge/license-Boost%201.0-blue.svg)](http://www.boost.org/LICENSE_1_0.txt)
 
-Introduction
-============
+# ClangFormat CMake module example
 
-This is a minimalistic C++ project which demonstrates the use of
-[`clangformat-cmake`](https://github.com/zemasoft/clangformat-cmake)
-project containing ClangFormat CMake module.
+This is a minimalistic C++ project which demonstrates the use of ClangFormat
+CMake module which can be found
+[here](https://github.com/zemasoft/clangformat-cmake).
 
-Requirements
-============
+## Requirements
 
 The module itself requires CMake 3.0 or higher and any version of clang-format
 installed. You will also need a C++ compiler for CMake to be able to generate
 the build system.
 
-Usage
-=====
+## Usage
 
 1) Obtain the project:
 
@@ -57,8 +54,7 @@ $ cd build
 $ make
 ```
 
-Notes
-=====
+## Notes
 
 * Sources to play with:
   * [`hello.hpp`](hello.hpp)
