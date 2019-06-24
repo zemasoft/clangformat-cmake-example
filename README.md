@@ -18,7 +18,6 @@ the build system.
 Usage
 =====
 
-
 1) Obtain the project:
 
 ```bash
@@ -38,8 +37,7 @@ $ cmake . -Bbuild
 ```bash
 $ cmake --build build --target clangformat
 ```
-
-or:
+   or:
 
 ```bash
 $ cd build
@@ -52,7 +50,7 @@ $ make clangformat
 $ cmake --build build
 ```
 
-or:
+   or:
 
 ```bash
 $ cd build
