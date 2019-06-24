@@ -19,7 +19,7 @@ Usage
 =====
 
 
-First, get the project:
+1) Obtain the project:
 
 ```bash
 $ git clone https://github.com/zemasoft/clangformat-cmake-example
@@ -27,13 +27,13 @@ $ cd clangformat-cmake-example
 $ git submodule --init --recursive
 ```
 
-Then generate the build system:
+2) Generate the build system:
 
 ```bash
 $ cmake . -Bbuild
 ```
 
-Now you can format sources anytime using `clangformat` target:
+3) Format sources anytime using `clangformat` target:
 
 ```bash
 $ cmake --build build --target clangformat
@@ -46,7 +46,7 @@ $ cd build
 $ make clangformat
 ```
 
-Finally, try to build the project:
+4) Build the project:
 
 ```bash
 $ cmake --build build
