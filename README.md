@@ -1,10 +1,10 @@
 [![Language](https://img.shields.io/badge/language-CMake-blue.svg)](https://cmake.org/)
 [![Licence](https://img.shields.io/badge/license-Boost%201.0-blue.svg)](http://www.boost.org/LICENSE_1_0.txt)
 
-# ClangFormat CMake module example
+# ClangFormat.cmake module example
 
-This is a minimalistic C++ project which demonstrates the use of ClangFormat
-CMake module which can be found
+This is a minimalistic C++ project which demonstrates the use of
+ClangFormat.cmake module which can be found
 [here](https://github.com/zemasoft/clangformat-cmake).
 
 ## Requirements
