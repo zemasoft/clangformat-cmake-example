@@ -1,5 +1,4 @@
-[![Language](https://img.shields.io/badge/language-CMake-blue.svg)](https://cmake.org/)
-[![Licence](https://img.shields.io/badge/license-Boost%201.0-blue.svg)](http://www.boost.org/LICENSE_1_0.txt)
+[![language.badge]][language.url] [![license.badge]][license.url]
 
 # ClangFormat.cmake module example
 
@@ -67,3 +66,9 @@ the build system.
 
 * If you want to use clang-format that is not on your seach path, you have to
   supply CMake with<br/>`-DCLANGFORMAT_EXECUTABLE=/path/to/clang-format`.
+
+[language.url]:   https://cmake.org/
+[language.badge]: https://img.shields.io/badge/language-CMake-blue.svg
+
+[license.url]:    http://www.boost.org/LICENSE_1_0.txt
+[license.badge]:  https://img.shields.io/badge/license-Boost%201.0-blue.svg
