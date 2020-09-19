@@ -57,8 +57,8 @@ the build system.
 ## Notes
 
 * Sources to play with:
-  * [`hello.hpp`](hello.hpp)
-  * [`hello.cpp`](hello.cpp)
+  * [`hello.hpp`](src/hello.hpp)
+  * [`hello.cpp`](src/hello.cpp)
   * [`test/hello_test.cpp`](test/hello_test.cpp)
 
 * Format style configuration:
