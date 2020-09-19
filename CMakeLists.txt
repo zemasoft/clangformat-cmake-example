@@ -1,5 +1,6 @@
 cmake_minimum_required(VERSION 3.0)
-project(ClangFormatCMakeExample)
+
+project(ClangFormatCMakeExample LANGUAGES CXX)
 
 list(APPEND CMAKE_MODULE_PATH ${PROJECT_SOURCE_DIR}/clangformat-cmake/cmake)
 
@@ -8,7 +9,10 @@ add_library(hello
   src/hello.hpp
 )
 
-target_include_directories(hello PUBLIC src)
+target_include_directories(hello
+  PUBLIC
+    src
+)
 
 add_library(ClangFormatCMakeExample::hello ALIAS hello)
 
