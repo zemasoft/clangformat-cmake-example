@@ -57,14 +57,14 @@ the build system.
 ## Notes
 
 * Sources to play with:
-  * [`hello.hpp`](src/hello.hpp)
-  * [`hello.cpp`](src/hello.cpp)
+  * [`src/hello.hpp`](src/hello.hpp)
+  * [`src/hello.cpp`](src/hello.cpp)
   * [`test/hello_test.cpp`](test/hello_test.cpp)
 
 * Format style configuration:
   * [`.clang-format`](.clang-format)
 
-* If you want to use clang-format that is not on your seach path, you have to
+* If you want to use clang-format that is not on your search path, you have to
   supply CMake with<br/>`-DCLANGFORMAT_EXECUTABLE=/path/to/clang-format`.
 
 [language.url]:   https://cmake.org/
