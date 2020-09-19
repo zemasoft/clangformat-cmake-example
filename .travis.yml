@@ -1,0 +1,15 @@
+os: linux
+dist: bionic
+sudo: false
+
+language: cpp
+
+addons:
+  apt:
+    packages:
+      - clang-format
+
+script:
+  - cmake -S . -Bbuild
+  - cmake --build build --target clangformat
+  - cmake --build build

@@ -1,4 +1,4 @@
-[![language.badge]][language.url] [![license.badge]][license.url]
+[![language.badge]][language.url] [![license.badge]][license.url] [![travis.badge]][travis.url]
 
 # ClangFormat.cmake module example
 
@@ -25,7 +25,7 @@ the build system.
 2) Generate the build system:
 
    ```bash
-   $ cmake . -Bbuild
+   $ cmake -S . -Bbuild
    ```
 
 3) Format sources anytime using `clangformat` target:
@@ -72,3 +72,6 @@ the build system.
 
 [license.url]:    http://www.boost.org/LICENSE_1_0.txt
 [license.badge]:  https://img.shields.io/badge/license-Boost%201.0-blue.svg
+
+[travis.url]:     https://travis-ci.org/zemasoft/clangformat-cmake-example
+[travis.badge]:   https://travis-ci.org/zemasoft/clangformat-cmake-example.svg?branch=master
