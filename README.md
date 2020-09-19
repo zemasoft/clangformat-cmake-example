@@ -19,7 +19,7 @@ the build system.
    ```bash
    $ git clone https://github.com/zemasoft/clangformat-cmake-example
    $ cd clangformat-cmake-example
-   $ git submodule --init --recursive
+   $ git submodule update --init --recursive
    ```
 
 2) Generate the build system:
