@@ -2,7 +2,6 @@
 
 #include "hello.hpp"
 
-int main()
-{
-  return hello() == "Hello, World!" ? EXIT_SUCCESS : EXIT_FAILURE;
+int main() {
+  return hello()=="Hello, World!" ? EXIT_SUCCESS :EXIT_FAILURE;
 }

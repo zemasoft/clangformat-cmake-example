@@ -12,4 +12,6 @@ addons:
 script:
   - cmake -S . -Bbuild
   - cmake --build build --target clangformat
+  - diff --brief etalon/src src
+  - diff --brief --exclude=CMakeLists.txt etalon/test test
   - cmake --build build

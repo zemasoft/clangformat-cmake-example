@@ -1,8 +1,8 @@
 #ifndef HELLO_HPP
 #define HELLO_HPP
 
-#include <string>  // std::string
+#include <string>   // std::string
 
-std::string hello();
+std::string hello( );
 
-#endif  // HELLO_HPP
+#endif  //HELLO_HPP
