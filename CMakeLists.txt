@@ -14,10 +14,8 @@ target_include_directories(hello
     src
 )
 
-add_library(ClangFormatCMakeExample::hello ALIAS hello)
-
 include(ClangFormat)
-target_clangformat_setup(ClangFormatCMakeExample::hello)
+target_clangformat_setup(hello)
 
 include(CTest)
 add_subdirectory(test)
